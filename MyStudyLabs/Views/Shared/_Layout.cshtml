@@ -1,0 +1,70 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <link href="../../Content/css/bootstrap.min.css?parameter=1" rel="stylesheet">
+    <link href="../../Content/css/simple-sidebar.css" rel="stylesheet" type="text/css" />
+    <script src="../../Content/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <script>
+        $(document).ready(function () {
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("active");
+            });
+        });
+    </script>
+    <style>
+        #wrapper.active #sidebar-wrapper {
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div align="left"> <a class="navbar-brand" href="/">MY STUDY LABS</a></div>
+    <div class="container">
+      
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="@Url.Action("LogOff","Account")">LogOut</a></li>
+            </ul>
+      
+    </div>
+   
+</div>
+<div class="container body-content" style="margin-top: 50px">
+    @RenderBody()
+</div>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul id="sidebar_menu" class="sidebar-nav" style="text-align: right; padding-right: 10px;
+                                                                                                                            padding-top: 10px">
+            <li class="sidebar-brand">
+                <a id="menu-toggle" href="#">
+                    <span id="main_icon" class="navbar-icon fa fa-bars icon">
+                        </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a id="labCreatelink" href="@Url.Action("Create","Lab")" data-toggle="modal">Create </a></li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <br/>
+        <br/>
+        <hr/>
+       
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
