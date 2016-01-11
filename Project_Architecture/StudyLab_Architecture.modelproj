@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>UMLActivityDiagram1.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="UMLUseCaseDiagram1.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLUseCaseDiagram1.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLUseCaseDiagram1.usecasediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Project_Architecture.uml">
       <SubType>Content</SubType>

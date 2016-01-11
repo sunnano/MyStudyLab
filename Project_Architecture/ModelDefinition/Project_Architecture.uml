@@ -1,8 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="a4a3416e-5c3a-4621-af9f-2377873506b8"
   name="Project_Architecture" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="2755d88f-4ebd-4bb7-a7d9-30b42a5dfee2">
+      <body>Create Category
+</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -46,8 +53,382 @@
                 value="2147483647" />
             </upperBound>
           </objectNode>
+          <objectNode
+            Id="a44cb7cd-743d-45e6-88ab-8019ad59384b"
+            name="Category "
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="00aa6477-2ba6-46ae-a169-7d1ffdff88dd"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="7e510112-13c3-4c1f-9355-a7f1c52db811"
+            name="Category Builder"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="d9418ddf-70da-4878-8023-6050821efeba"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="2116b8c9-8d7f-4379-a1a2-5ecbac5f2216"
+            name="Category Factory"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="26b3d77e-11d9-49df-85c0-03a7ce4a1267"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1548ce2f-3ab3-4f5c-997a-feee6f250ecd"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="17aeb063-6812-4558-9cfd-5447edd0e61c">
+            <useCaseMoniker
+              Id="149d58e0-dbbe-4008-b717-fe92c9dbf86d"
+              LastKnownName="Login"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="149d58e0-dbbe-4008-b717-fe92c9dbf86d"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="9f4f55b4-912c-4541-ac34-772ac250cc0e">
+            <useCaseMoniker
+              Id="6c5a3504-4542-4700-ba4b-e09226137fb3"
+              LastKnownName="Category Builder"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+          <dependency
+            Id="b10956ff-12e5-43db-b98d-c859066857a5">
+            <useCaseMoniker
+              Id="13f202e2-3629-4022-932d-5272df2310e9"
+              LastKnownName="Select Workflow "
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6c5a3504-4542-4700-ba4b-e09226137fb3"
+        name="Category Builder"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="2d1e2f34-c1e1-4d1f-85b4-ef8ca705bc17">
+            <subsystemMoniker
+              Id="c46a8ecd-8e52-46c4-8858-b1e7ef55bfc9"
+              LastKnownName="Category Factory "
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="13f202e2-3629-4022-932d-5272df2310e9"
+        name="Select Workflow "
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="a0f51f11-42ce-41be-bf0c-f4f43ce6ad24">
+            <useCaseMoniker
+              Id="e7b21164-eb7c-4f6f-80e5-f6ff33ce6a40"
+              LastKnownName="Programming"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+          <dependency
+            Id="59eed6a3-2fc0-4d2d-a06c-dee3a0ebd6af">
+            <useCaseMoniker
+              Id="05772d0a-3faf-42cf-bf0b-d6c467d3ddea"
+              LastKnownName="Study"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+          <dependency
+            Id="6989ee93-2f55-4633-b64e-60c277c72a3c">
+            <useCaseMoniker
+              Id="a04ef818-8b94-4925-a07f-0e654e98b5a8"
+              LastKnownName="Scratch Pad"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e7b21164-eb7c-4f6f-80e5-f6ff33ce6a40"
+        name="Programming"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="05772d0a-3faf-42cf-bf0b-d6c467d3ddea"
+        name="Study"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="5be79c4a-a4b2-495d-a495-65d8110831de">
+            <useCaseMoniker
+              Id="a04ef818-8b94-4925-a07f-0e654e98b5a8"
+              LastKnownName="Scratch Pad"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+          <dependency
+            Id="dc63ba30-d983-4593-883f-1469cb5b1585">
+            <useCaseMoniker
+              Id="2826faf9-b86b-4c67-bad7-f8853dd51ec1"
+              LastKnownName="EBook Reader"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+          <dependency
+            Id="c6c895be-7f49-48da-8dbc-7a67e12278b4">
+            <useCaseMoniker
+              Id="47dfddd5-ae79-4a2d-a53f-18ab20d34e65"
+              LastKnownName="Web Articles"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2826faf9-b86b-4c67-bad7-f8853dd51ec1"
+        name="EBook Reader"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="d82e30cc-7c50-42e8-b636-a00086586e02"
+        name="C# Web Compiler, Java WebCompiler, Javascript WebCompiler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="de51c5f0-85dc-40fb-b4b3-9285941aa828"
+            isDerived="false"
+            sourceEndRoleName="C# Web Compiler, Java WebCompiler, Javascript WebCompiler"
+            targetEndRoleName="Programming"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e7b21164-eb7c-4f6f-80e5-f6ff33ce6a40"
+              LastKnownName="Programming"
+              LastKnownLocation="Project_Architecture.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d98cc91-4fa7-44ee-ac79-0e482104b4db"
+                  name="C# Web Compiler, Java WebCompiler, Javascript WebCompiler"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="25a33e1b-d311-47a9-b976-f1162fe7fbe3"
+                  name="Programming"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="47dfddd5-ae79-4a2d-a53f-18ab20d34e65"
+        name="Web Articles"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="263c1fb1-ea60-4602-b817-8c073d1b3127">
+            <subsystemMoniker
+              Id="f1f3d94a-05d9-4bc1-815b-00ba13668a87"
+              LastKnownName="OnLine &amp; Offline Articles"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a04ef818-8b94-4925-a07f-0e654e98b5a8"
+        name="Scratch Pad"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="66483a37-cf67-40be-a1ee-775bb9ae55d4">
+            <useCaseMoniker
+              Id="2a09e8a4-aa22-4e3d-b097-292b6ba23fbc"
+              LastKnownName="Text Editor"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+          <dependency
+            Id="e4386675-f436-4462-bad3-f7d24421e998">
+            <useCaseMoniker
+              Id="e56d4e96-2f49-4e74-81aa-9fd7387eff92"
+              LastKnownName="Blogging "
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="f1f3d94a-05d9-4bc1-815b-00ba13668a87"
+        name="OnLine &amp; Offline Articles"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c46a8ecd-8e52-46c4-8858-b1e7ef55bfc9"
+        name="Category Factory "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="edbb4523-280b-4e2a-aa53-aa6d658d0b84"
+            isDerived="false"
+            sourceEndRoleName="Category Factory"
+            targetEndRoleName="Category Engine"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7e09fea5-e525-4a66-b670-6585de6a2101"
+              LastKnownName="Category Engine"
+              LastKnownLocation="Project_Architecture.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="19ad8d46-f3a6-4a0d-b0ae-f51f6d9962ff"
+                  name="Category Factory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ee2310d-56a6-4122-943f-899c55bd7570"
+                  name="Category Engine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7e09fea5-e525-4a66-b670-6585de6a2101"
+        name="Category Engine"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2a09e8a4-aa22-4e3d-b097-292b6ba23fbc"
+        name="Text Editor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e56d4e96-2f49-4e74-81aa-9fd7387eff92"
+        name="Blogging "
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="ae0ca065-0fe2-4748-92b2-be0205711b3a">
+            <useCaseMoniker
+              Id="3a420826-3f5d-42d0-b197-b1ab317ff43f"
+              LastKnownName="Private Blogging within Lab"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+          <dependency
+            Id="c6a026a0-2598-4ef2-a55a-0802336026d8">
+            <useCaseMoniker
+              Id="7e74da24-7707-4ae1-83ad-84adb1903f62"
+              LastKnownName="Public Blogging"
+              LastKnownLocation="Project_Architecture.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3a420826-3f5d-42d0-b197-b1ab317ff43f"
+        name="Private Blogging within Lab"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7e74da24-7707-4ae1-83ad-84adb1903f62"
+        name="Public Blogging"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

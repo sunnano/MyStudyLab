@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="6204383f-a05a-4b05-af59-025cccdd5768" name="UMLUseCaseDiagram1" linkedPackageId="619429af-7cb3-40e1-91b1-d7413a39619b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="33862d28-34ad-4971-9148-a9ccd56c8c24">
+      <elementDefinition Id="2755d88f-4ebd-4bb7-a7d9-30b42a5dfee2" />
+      <body>Create Category
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="42096030-0df7-4da2-a948-c9f99c960115">
+      <profileInstance Id="6c404aea-b8d7-46d9-a4c5-e601c1899ca7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="12ca2e43-bb68-449b-986f-94c3e0184f79">
+      <profileInstance Id="f187772d-c7ac-424b-8502-8444b0b89a01" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="0f9d6664-b519-4b91-bfab-e24f90d0e179" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1548ce2f-3ab3-4f5c-997a-feee6f250ecd" />
+        <suppliersInternal>
+          <dependency Id="5749f732-47ec-46e2-935f-f9dca5ebe78e">
+            <useCaseMoniker Id="071617b5-31ed-483c-9393-e6451bab4cde" LastKnownName="Login" />
+            <elementDefinition Id="17aeb063-6812-4558-9cfd-5447edd0e61c" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="071617b5-31ed-483c-9393-e6451bab4cde" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="149d58e0-dbbe-4008-b717-fe92c9dbf86d" />
+        <suppliersInternal>
+          <dependency Id="86b1d2e9-bf75-4181-aa15-fdde519d7701">
+            <useCaseMoniker Id="dcd89ff4-0077-4ee6-84cb-74d107d68fb5" LastKnownName="Category Builder" />
+            <elementDefinition Id="9f4f55b4-912c-4541-ac34-772ac250cc0e" />
+          </dependency>
+          <dependency Id="6b98b1b2-cfa6-43d4-9708-4453e859f75a">
+            <useCaseMoniker Id="0fc695d1-eb9a-4883-9cb8-2fb8f3787408" LastKnownName="Select Workflow " />
+            <elementDefinition Id="b10956ff-12e5-43db-b98d-c859066857a5" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dcd89ff4-0077-4ee6-84cb-74d107d68fb5" name="Category Builder" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6c5a3504-4542-4700-ba4b-e09226137fb3" />
+        <suppliersInternal>
+          <dependency Id="cb3b31b0-b202-47ac-a906-88e0d4ea61a7">
+            <subsystemMoniker Id="80763cf6-9d23-45f6-9dae-347fc5cc4a5b" LastKnownName="Category Factory " />
+            <elementDefinition Id="2d1e2f34-c1e1-4d1f-85b4-ef8ca705bc17" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0fc695d1-eb9a-4883-9cb8-2fb8f3787408" name="Select Workflow " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="13f202e2-3629-4022-932d-5272df2310e9" />
+        <suppliersInternal>
+          <dependency Id="45430d5a-c0de-4e0d-bde7-4aa823021f24">
+            <useCaseMoniker Id="e15ab76d-3034-4c23-8b77-aa439a288311" LastKnownName="Programming" />
+            <elementDefinition Id="a0f51f11-42ce-41be-bf0c-f4f43ce6ad24" />
+          </dependency>
+          <dependency Id="3f146fcd-1851-40ff-8d85-be249e470c9a">
+            <useCaseMoniker Id="7abfcdcb-6b41-461b-af08-463621a35d8e" LastKnownName="Study" />
+            <elementDefinition Id="59eed6a3-2fc0-4d2d-a06c-dee3a0ebd6af" />
+          </dependency>
+          <dependency Id="910193b6-64bc-4684-a773-cb515af91cbd">
+            <useCaseMoniker Id="43543038-9d09-4bf3-81fd-973e63a566a0" LastKnownName="Scratch Pad" />
+            <elementDefinition Id="6989ee93-2f55-4633-b64e-60c277c72a3c" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e15ab76d-3034-4c23-8b77-aa439a288311" name="Programming" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7b21164-eb7c-4f6f-80e5-f6ff33ce6a40" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7abfcdcb-6b41-461b-af08-463621a35d8e" name="Study" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="05772d0a-3faf-42cf-bf0b-d6c467d3ddea" />
+        <suppliersInternal>
+          <dependency Id="5b66e91a-7876-4b3f-a4e8-1f9909166bd2">
+            <useCaseMoniker Id="43543038-9d09-4bf3-81fd-973e63a566a0" LastKnownName="Scratch Pad" />
+            <elementDefinition Id="5be79c4a-a4b2-495d-a495-65d8110831de" />
+          </dependency>
+          <dependency Id="9244ad9f-df4f-4ddc-b3c2-e339bee7f739">
+            <useCaseMoniker Id="5ca0bd0c-29a6-4f40-872f-862e52265ab2" LastKnownName="EBook Reader" />
+            <elementDefinition Id="dc63ba30-d983-4593-883f-1469cb5b1585" />
+          </dependency>
+          <dependency Id="c8ebcab1-5d73-48c3-8659-65f6ed4f1a37">
+            <useCaseMoniker Id="36070d34-119a-4b5e-b092-7f826b6719cb" LastKnownName="Web Articles" />
+            <elementDefinition Id="c6c895be-7f49-48da-8dbc-7a67e12278b4" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5ca0bd0c-29a6-4f40-872f-862e52265ab2" name="EBook Reader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2826faf9-b86b-4c67-bad7-f8853dd51ec1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="69c76ed5-a612-429e-ae66-c083d202c37f" name="C# Web Compiler, Java WebCompiler, Javascript WebCompiler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d82e30cc-7c50-42e8-b636-a00086586e02" />
+        <targetEnds>
+          <association Id="67c9105c-519f-4444-a1cd-78db6bbcacfd" isDerived="false" sourceEndRoleName="C# Web Compiler, Java WebCompiler, Javascript WebCompiler" targetEndRoleName="Programming" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e15ab76d-3034-4c23-8b77-aa439a288311" LastKnownName="Programming" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a558bb1d-7460-4e97-aa03-b4213d8335c1" name="C# Web Compiler, Java WebCompiler, Javascript WebCompiler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5d98cc91-4fa7-44ee-ac79-0e482104b4db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="147554d4-92f9-4fe8-b466-b4f2c1a68e32" name="Programming" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="25a33e1b-d311-47a9-b976-f1162fe7fbe3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="de51c5f0-85dc-40fb-b4b3-9285941aa828" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="36070d34-119a-4b5e-b092-7f826b6719cb" name="Web Articles" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47dfddd5-ae79-4a2d-a53f-18ab20d34e65" />
+        <suppliersInternal>
+          <dependency Id="83e70d1a-f325-48ae-9423-f2e2966fe8b5">
+            <subsystemMoniker Id="b3ab3608-0dc1-482d-a354-27bd420f00a5" LastKnownName="OnLine &amp; Offline Articles" />
+            <elementDefinition Id="263c1fb1-ea60-4602-b817-8c073d1b3127" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="43543038-9d09-4bf3-81fd-973e63a566a0" name="Scratch Pad" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a04ef818-8b94-4925-a07f-0e654e98b5a8" />
+        <suppliersInternal>
+          <dependency Id="bccdfeb6-41a4-4ee2-8940-6b03fddbfcc7">
+            <useCaseMoniker Id="a55874ca-eea3-40f0-9f94-8d2f7b2cb093" LastKnownName="Text Editor" />
+            <elementDefinition Id="66483a37-cf67-40be-a1ee-775bb9ae55d4" />
+          </dependency>
+          <dependency Id="238c77d2-e811-4492-baca-7c2808844ac0">
+            <useCaseMoniker Id="4aa989d0-2a61-4844-bbe2-6c30ee69a392" LastKnownName="Blogging " />
+            <elementDefinition Id="e4386675-f436-4462-bad3-f7d24421e998" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="b3ab3608-0dc1-482d-a354-27bd420f00a5" name="OnLine &amp; Offline Articles" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f1f3d94a-05d9-4bc1-815b-00ba13668a87" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="80763cf6-9d23-45f6-9dae-347fc5cc4a5b" name="Category Factory " isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c46a8ecd-8e52-46c4-8858-b1e7ef55bfc9" />
+        <targetEnds>
+          <association Id="1369b178-bc51-4edc-9879-f6542358cb05" isDerived="false" sourceEndRoleName="Category Factory" targetEndRoleName="Category Engine" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="371dc75f-2ad9-4a83-bd9c-991a45bc0152" LastKnownName="Category Engine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="173b71a7-23a0-40e2-90ef-2a8832676f2b" name="Category Factory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="19ad8d46-f3a6-4a0d-b0ae-f51f6d9962ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d925214-4b47-46ce-86db-862ea3562e03" name="Category Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7ee2310d-56a6-4122-943f-899c55bd7570" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="edbb4523-280b-4e2a-aa53-aa6d658d0b84" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="371dc75f-2ad9-4a83-bd9c-991a45bc0152" name="Category Engine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e09fea5-e525-4a66-b670-6585de6a2101" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a55874ca-eea3-40f0-9f94-8d2f7b2cb093" name="Text Editor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a09e8a4-aa22-4e3d-b097-292b6ba23fbc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4aa989d0-2a61-4844-bbe2-6c30ee69a392" name="Blogging " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e56d4e96-2f49-4e74-81aa-9fd7387eff92" />
+        <suppliersInternal>
+          <dependency Id="1e7b8727-1055-4e12-a960-9e1936c24cd1">
+            <useCaseMoniker Id="9b7c834d-c6c6-4329-a736-dbe3035ac229" LastKnownName="Private Blogging within Lab" />
+            <elementDefinition Id="ae0ca065-0fe2-4748-92b2-be0205711b3a" />
+          </dependency>
+          <dependency Id="328ba1b9-5722-4d0a-988a-87ebd6493d21">
+            <useCaseMoniker Id="b7b90f7e-ceee-49c6-a060-cb4e2d175045" LastKnownName="Public Blogging" />
+            <elementDefinition Id="c6a026a0-2598-4ef2-a55a-0802336026d8" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9b7c834d-c6c6-4329-a736-dbe3035ac229" name="Private Blogging within Lab" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3a420826-3f5d-42d0-b197-b1ab317ff43f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b7b90f7e-ceee-49c6-a060-cb4e2d175045" name="Public Blogging" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e74da24-7707-4ae1-83ad-84adb1903f62" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="619429af-7cb3-40e1-91b1-d7413a39619b" name="Project_Architecture">
+    <elementDefinition Id="a4a3416e-5c3a-4621-af9f-2377873506b8" />
+  </package>
+</useCaseModelRoot>
