@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStudyLabs.ObjectLibrary",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStudyLabs.DataRepository", "DataRepository\MyStudyLabs.DataRepository.csproj", "{5AFA4DDA-2457-4885-BD86-11D33ABDB5BB}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "StudyLab_Architecture", "Project_Architecture\StudyLab_Architecture.modelproj", "{8A74B64C-C6D7-44F3-92DE-7DB8A936AE8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5AFA4DDA-2457-4885-BD86-11D33ABDB5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AFA4DDA-2457-4885-BD86-11D33ABDB5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AFA4DDA-2457-4885-BD86-11D33ABDB5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A74B64C-C6D7-44F3-92DE-7DB8A936AE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A74B64C-C6D7-44F3-92DE-7DB8A936AE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A74B64C-C6D7-44F3-92DE-7DB8A936AE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A74B64C-C6D7-44F3-92DE-7DB8A936AE8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
